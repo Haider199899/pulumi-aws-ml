@@ -18,8 +18,8 @@ pulumi new aws-typescript  # For TypeScript
 Run the following commands to securely set the required AWS credentials and environment variables:
 
 ```sh
-pulumi config set ENV:AWS_ACCESS_KEY_ID --secret "xxxxxxxxxx"
-pulumi config set ENV:AWS_SECRET_ACCESS_KEY --secret "xxxxxxxx"
+pulumi config set --secret ENV:AWS_ACCESS_KEY_ID "xxxxxxxxxx"
+pulumi config set --secret ENV:AWS_SECRET_ACCESS_KEY "xxxxxxxx"
 pulumi config set aws:region "xxxxx"
 pulumi config set ENV:SUBNET_ID "xxxxxxxxxxx"
 pulumi config set ENV:SECURITY_GROUP_ID "xxxxxxxxxxxxx"
